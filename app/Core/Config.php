@@ -21,10 +21,10 @@ class Config
         ob_start();
 
         //site address
-        define('DIR', 'http://domain.com');
+        define('DIR', 'http://127.0.1.1/findmeafavour/');
 
         //set default controller and method for legacy calls
-        define('DEFAULT_CONTROLLER', 'welcome');
+        define('DEFAULT_CONTROLLER', 'home');
         define('DEFAULT_METHOD', 'index');
 
         //set the default template

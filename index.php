@@ -63,6 +63,7 @@ use Helpers\Hooks;
 //define routes
 Router::any('', 'Controllers\Home@index');
 Router::any('subpage', 'Controllers\Home@subPage');
+Router::any('skill_save', 'Controllers\Skill@save');
 
 //module routes
 $hooks = Hooks::get();

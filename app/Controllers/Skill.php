@@ -24,6 +24,16 @@ class Skill extends Controller
         $this->language->load('Skill');
     }
 
+    public function index()
+    {
+        $data['title'] = $this->language->get('welcome_text');
+        $data['welcome_message'] = $this->language->get('welcome_message');
+
+        View::renderTemplate('header', $data);
+        View::render('home/home', $data);
+        View::renderTemplate('footer', $data);
+    }
+
     /**
      * Define Index page title and load template files
      */
