@@ -21,7 +21,7 @@ class Home extends Controller
     public function __construct()
     {
         parent::__construct();
-        $this->language->load('');
+        $this->language->load('Home');
     }
 
     /**
